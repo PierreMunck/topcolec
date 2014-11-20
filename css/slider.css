@@ -1,0 +1,45 @@
+.slider_container {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slide_left, .slide_right {
+	background-image: url("../img/arrows.gif");
+    height: 62px;
+    margin-top: -28px;
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    width: 38px;
+    border : 0;
+	z-index: 60;
+}
+.slide_left {
+  left: 0px;
+}
+.slide_right {
+  right: 0px;
+  background-position: -38px 0;
+}
+
+.slide_left:focus {
+  background-position: 0 62px;
+}
+
+.slide_right:focus {
+  background-position: -38px 62px;
+}
+
+.slider_container .slide_container {
+  white-space: nowrap;
+}
+
+.slider_container .slide_container .slide {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
